@@ -1,0 +1,45 @@
+.main {
+    margin: 2rem;
+    text-align: center;
+}
+
+.create--btn {
+    width: 50%;
+    height: 2.5rem;
+
+    border-radius: 20px;
+    border: 2px solid rgb(255, 195, 104);
+    background-color: rgba(0, 255, 255, 0);
+    cursor: pointer;
+}
+
+.create--btn:hover {
+    background-color: rgb(255, 195, 104);
+    color: white;
+}
+
+.list--div {
+    margin: 0rem;
+    overflow: scroll;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 5px;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 600px) {
+    .main {
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       justify-content: center;
+       min-width: 100vw;
+       margin: 0;
+    }
+
+    .list--div{
+        width: 100%;
+    }
+}

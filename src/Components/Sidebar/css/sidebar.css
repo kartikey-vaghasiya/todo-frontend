@@ -1,0 +1,16 @@
+.sidebar {
+    /*  */ display: flex;
+    flex-direction: column;
+    gap: 2px;
+    grid-area: side;
+
+    /*  */ margin-top: 2rem;
+    background-color: white;  
+}
+
+@media (max-width: 600px) {
+    .sidebar {
+        display: none;
+    }
+
+}

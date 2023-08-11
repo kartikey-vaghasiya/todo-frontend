@@ -1,0 +1,131 @@
+.todo--block {
+    margin: 1rem;
+    padding: 1rem;
+    border: 1px solid rgb(255, 195, 104);
+    min-width: 70%;
+    max-width: 80%;
+    min-height: 30%;
+    height: auto;
+    background-color: rgba(230, 230, 191, 0.194);
+    border-radius: 20px;
+}
+
+.todo--block input {
+    margin-left: 1rem;
+    width: 60%;
+    padding: 0.5rem;
+    border-radius: 10px;
+    border: 1px solid gray;
+}
+
+
+.todo--block button {
+    margin-left: 1rem;
+    width: 20%;
+    padding: 0.5rem;
+    border-radius: 10px;
+    border: 1px solid gray;
+}
+
+.todo--heading--input {
+    margin: 1rem 0rem 1rem 1rem;
+}
+
+.yellow--btn {
+    width: 5rem;
+    height: 2.5rem;
+    border-radius: 20px;
+    border: 2px solid rgb(255, 195, 104);
+    background-color: rgba(0, 255, 255, 0);
+    cursor: pointer;
+}
+
+.yellow--btn:hover {
+    background-color: rgb(64, 235, 115);
+    color: white;
+}
+
+.todo--heading--div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.todo--delete--btn {
+    max-width: 45px;
+    max-height: 30px;
+    background-color: white;
+    border: 1px solid gray;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.todo--without--heading {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.big--dlt--btn {
+    margin: 1rem 0rem 1rem 1rem;
+}
+
+.todo--delete--btn--full {
+    min-width: 60%;
+    max-height: 3rem;
+    background-color: white;
+    border: 1px solid gray;
+    cursor: pointer;
+    margin: 1rem auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.todo--delete--btn img {
+    width: 60%;
+}
+
+.todo--delete--btn:hover {
+    background-color: rgb(255, 142, 142);
+}
+
+@media (max-width: 600px) {
+    .todo--block {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        min-width: 80%;
+        min-height: auto;
+    }
+
+    .todo--heading--div {
+        width: 100%;
+    }
+
+    .todo--block input {
+        width: 40%;
+        height: min-content;
+    }
+
+    .todo--block button {
+        width: 40%;
+    }
+
+    .todo--delete--btn--full {
+        min-width: 80%;
+        max-height: 3rem;
+        background-color: white;
+        border: 1px solid gray;
+        cursor: pointer;
+        margin: 1rem auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+}
