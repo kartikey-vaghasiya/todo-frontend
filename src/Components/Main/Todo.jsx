@@ -56,13 +56,13 @@ export default function Todo(props) {
     }
 
     function handleEnter(event) {
-        if (event.key == "Enter") {
+        if (event.key === "Enter") {
             handleSubmit(event)
         }
     }
 
     function handleEnterHeading(event) {
-        if (event.key == "Enter") {
+        if (event.key === "Enter") {
             addHeading(event)
         }
         console.log(todoHeading)
